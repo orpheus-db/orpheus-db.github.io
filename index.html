@@ -80,6 +80,7 @@
             <ul class="nav navbar-nav">
               <li><a href="index.html#">Home</a></li>
               <li><a href="index.html#about">About</a></li>
+              <li><a href="index.html#features">Features</a></li>
               <li><a href="index.html#releases">Releases</a></li>
               <li><a href="index.html#papers">Papers</a></li>
               <li><a href="index.html#contact">Contact Us</a><li>
@@ -153,11 +154,30 @@
           <h5>
             <b>OrpheusDB</b> is built as a wrapper on top of traditional database systems,
             with no modifications to the underlying database. At the same time, OrpheusDB
-            supports an important subset of git commands enabling cloning, checkout, diff,
-            and merge. Lastly, OrpheusDB supports cross-version SQL commands, e.g., cross-version joins or aggregates. 
+            supports an important subset of git commands enabling checkout, commit, init, create_user, config, whoami, ls, drop, and optimize. Lastly, OrpheusDB supports a rich syntax of SQL statements, against either known or unknown version(s) of a particular dataset.
 	        </h5>
           <h5> OrpheusDB is an offshoot of the MIT DataHub project, which is aimed
             at developing a platform for collaborative data analytics. Head <a href="http://datahub.csail.mit.edu">here</a> for more details.
+          </h5>
+        </div>
+      </div>
+
+      <a name="features"></a> 
+      <div class="row">
+        <div class="col-md-12">
+          <h2> Key Features  </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <h5>
+            OrpheusDB is a hosted system that supports <font color="firebrick"><em>relational dataset version management</font></em>, with the following design innovations:
+            <ul>
+              <li> OrpheusDB is built on top of a traditional relational database, thus it inherits all of the standard benefits of relational database systems <font color="firebrick"><em>"for free"</font></em> </li>
+              <li> OrpheusDB supports advanced querying and versioning capabilities, via both <font color="firebrick"><em> SQL queries and git-style version control commands</font></em>. </li>
+              <li> OrpheusDB uses a <font color="firebrick"><em>sophisticated data model</font></em>, coupled with <font color="firebrick"><em>partition optimization algorithms</font></em>, to provide efficient version control performance over large-scale datasets.
+            </a>. </li>
+            </ul>
           </h5>
         </div>
       </div>
@@ -168,8 +188,9 @@
       <div class="row">
         <div class="col-md-12">
           <h2> Recent Releases</h2>
-          <h5> We are releasing our first beta in a few weeks (as of December 1, 2016). Stay tuned!
+          <h5> <!-- We are releasing our first beta in a few weeks (as of December 1, 2016). Stay tuned! -->
           <ul>
+            <li> Our version 1.0.0 <a href="https://github.com/orpheus-db/implementation/releases">release</a> is out. Check it now! </li>
             <li> A preprint describing our data representation and partitioning schemes can be found
               <a href="http://data-people.cs.illinois.edu/nowhere.html">here</a>. </li>
 	          <li> Our recent presentation can be found <a href="OrpheusDB.pdf">here</a>. </li>
